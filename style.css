@@ -1,0 +1,205 @@
+/* BACKGROUND */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    height: 100vh;
+}
+
+/* CENTER CONTENT */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* LOGIN BOX */
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* INPUTS */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* BUTTON */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #00c6ff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #0072ff;
+}
+
+/* LINK */
+.link a {
+    color: #00c6ff;
+    text-decoration: none;
+}
+
+/* ===================== */
+/* 3D BOOK SECTION */
+/* ===================== */
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* BOOK */
+.book {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.book:hover {
+    transform: rotateY(-160deg);
+}
+
+/* FRONT + INSIDE */
+.front, .inside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+/* FRONT COVER */
+.front {
+    background: #ff7e5f;
+    color: white;
+}
+
+/* INSIDE PAGE */
+.inside {
+    background: white;
+    transform: rotateY(180deg);
+    color: black;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #0072ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    /* ===================== */
+/* 3D BOOK */
+/* ===================== */
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* BOOK */
+.book {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.book:hover {
+    transform: rotateY(-160deg);
+}
+
+/* FRONT + INSIDE */
+.front, .inside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+/* FRONT */
+.front {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+}
+
+/* INSIDE */
+.inside {
+    background: white;
+    transform: rotateY(180deg);
+    color: black;
+}
+
+/* ===================== */
+/* SUBJECTS */
+/* ===================== */
+
+.subjects {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    width: 160px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    background: #0072ff;
+    color: white;
+    transform: scale(1.1);
+}
+}

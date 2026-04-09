@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subjects Portal</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+    }
+
+    /* 3D BOOK */
+    .book-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .book {
+        width: 300px;
+        padding: 25px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        backdrop-filter: blur(10px);
+    }
+
+    .book h2 {
+        margin-bottom: 10px;
+        color: #ffcc00;
+    }
+
+    /* SUBJECT SECTION */
+    .subjects {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .subjects h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #ffcc00;
+    }
+
+    /* CENTER GRID */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 25px;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    /* BIG CARDS */
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+
+        background: rgba(255,255,255,0.08);
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+        transition: 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px) scale(1.05);
+        background: rgba(255,255,255,0.18);
+        color: #ffcc00;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- 3D BOOK SECTION -->
+<div class="book-container">
+    <div class="book">
+        <h2>📚 Welcome</h2>
+        <p>Education is simple</p>
+        <p style="margin-top:10px;">
+            Your Future Starts Here 🚀<br><br>
+            Stay consistent and success will follow you.
+        </p>
+    </div>
+</div>
+
+<!-- SUBJECTS SECTION -->
+<div class="subjects">
+    <h2>Select a Subject</h2>
+
+    <div class="cards">
+        <a href="Math.html" class="card">📘 Mathematics</a>
+        <a href="#" class="card">📗 English</a>
+        <a href="#" class="card">📙 Kiswahili</a>
+
+        <a href="#" class="card">🧪 Biology</a>
+        <a href="#" class="card">⚗️ Chemistry</a>
+        <a href="#" class="card">🔬 Physics</a>
+
+        <a href="#" class="card">🌍 Geography</a>
+        <a href="#" class="card">📜 History</a>
+        <a href="#" class="card">🙏 CRE</a>
+
+        <a href="#" class="card">💼 Business</a>
+        <a href="#" class="card">🌱 Agriculture</a>
+        <a href="#" class="card">💻 Computer</a>
+
+        <a href="#" class="card">🏠 Home Science</a>
+        <a href="#" class="card">🎨 Art</a>
+        <a href="#" class="card">🎵 Music</a>
+    </div>
+</div>
+
+</body>
+</html>
